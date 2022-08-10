@@ -24,7 +24,7 @@ export const Header: React.FC<HeaderProps> = () => {
           <div className="items-center hidden gap-1 md:flex">
             {desktopHeaderOptions.map((Option) => (
               <Link href={`/${Option.href}`} key={Option.title}>
-                <a className="text-sm font-bold text-white xl:p-1">
+                <a className="text-sm font-bold text-white xl:p-1 hover:text-gray-400">
                   {Option.title}
                 </a>
               </Link>
