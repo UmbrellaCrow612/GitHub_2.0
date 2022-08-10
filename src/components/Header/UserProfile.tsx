@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { MdOutlineExpandMore } from 'react-icons/md'
 
-import { FaSpinner } from 'react-icons/fa'
 import { BiSmile } from 'react-icons/bi'
 import Link from 'next/link'
 import { MenuOption } from './MenuOption'
@@ -12,12 +11,12 @@ interface UserProfileProps {}
 
 export const UserProfile: React.FC<UserProfileProps> = () => {
   const [open, setOpen] = useState(false)
-  const [loading, setLoading] = useState(true)
 
   const handleClick = () => {
     setOpen(!open)
-    setLoading(false)
   }
+
+  // For the your options, you pull the user info nam from session and pass that as href, so it will use a loader to pull everything then show it after
   return (
     <>
       <div className="relative">
@@ -32,7 +31,7 @@ export const UserProfile: React.FC<UserProfileProps> = () => {
         {/** Menu */}
 
         {open ? (
-          <div className="absolute z-10 bg-white right-12 w-[200px] rounded-md shadow-xl border-[0.1em] border-[#CFD8DE] pb-2">
+          <div className="absolute z-10 bg-white right-12 w-[200px] rounded-md shadow-xl border-[0.1em] border-[#CFD8DE] pb-2 hidden md:block">
             <Link href="/">
               <a>
                 <div className="w-full h-16 px-3 py-2 overflow-scroll border-b-[0.1em] border-[#CFD8DE]">
@@ -68,7 +67,7 @@ export const UserProfile: React.FC<UserProfileProps> = () => {
       {/** Click away listener */}
       {open ? (
         <div
-          className="fixed top-0 left-0 z-0 w-full h-full"
+          className="fixed top-0 left-0 z-0 hidden w-full h-full md:block"
           onClick={() => setOpen(!open)}
         />
       ) : (
