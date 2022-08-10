@@ -43,7 +43,7 @@ export const mobileDrawerOptions: {
   },
   {
     title: 'Sign out',
-    href: '/api/auth/signout',
+    href: 'api/auth/signout',
     isLogOut: true,
   },
 ]
