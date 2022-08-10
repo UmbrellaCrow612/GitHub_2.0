@@ -3,7 +3,7 @@ export const desktopHeaderOptions: {
   href: string
 }[] = [
   {
-    title: 'Pull requests',
+    title: 'Pulls',
     href: 'pulls',
   },
   {
