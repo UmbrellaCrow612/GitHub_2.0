@@ -16,7 +16,7 @@ export const Header: React.FC<HeaderProps> = () => {
         <MenuHandler />
         <div className="flex items-center gap-3">
           <Logo />
-          <div className="w-[300px] h-[30px] hidden md:block">
+          <div className="w-[290px] h-[30px] hidden md:block">
             <SearchInput />
           </div>
 
