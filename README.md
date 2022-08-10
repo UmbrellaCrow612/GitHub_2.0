@@ -1,12 +1,12 @@
-# Templates 
+# Templates
 
 ## Branches:
 
-Includes 
+Includes
 
-- Tailwind stater 
-- MUI starter 
-- Prisma 
+- Tailwind stater
+- MUI starter
+- Prisma
 - Next Auth
 - Next auth & Prisma Adaptor
 - All feats branch for production: Tailwind, Prisma, Next Auth.
@@ -14,3 +14,7 @@ Includes
 Things you could add:
 
 Next themes to Tailwind examples
+
+# Mentions
+
+- [Logo](https://www.pngegg.com/en/search?q=github+logo)

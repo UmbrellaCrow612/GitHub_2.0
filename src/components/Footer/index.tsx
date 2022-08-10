@@ -1,9 +1,5 @@
-
-
-interface FooterProps {
-
-}
+interface FooterProps {}
 
 export const Footer: React.FC<FooterProps> = () => {
-        return <footer>Footer</footer>
+  return <footer>Footer</footer>
 }

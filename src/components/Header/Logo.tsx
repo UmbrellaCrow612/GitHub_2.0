@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useTheme } from 'next-themes'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 import { FaSpinner } from 'react-icons/fa'
@@ -34,7 +35,11 @@ export const Logo: React.FC<LogoProps> = () => {
           <FaSpinner className="text-white animate-spin text-3xl" />
         </>
       ) : (
-        <img src={src} alt="GitHub" loading="lazy" className="h-8 w-8" />
+        <Link href="/">
+          <a>
+            <img src={src} alt="GitHub" loading="lazy" className="h-8 w-8" />
+          </a>
+        </Link>
       )}
     </>
   )
