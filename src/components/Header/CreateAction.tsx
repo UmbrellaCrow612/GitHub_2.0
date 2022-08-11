@@ -36,7 +36,7 @@ export const CreateAction: React.FC<CreateActionProps> = () => {
       {/** Click away listener */}
       {open ? (
         <div
-          className="fixed top-0 left-0 z-0 w-full h-full"
+          className="fixed top-0 left-0 z-0 hidden w-full h-full md:block"
           onClick={() => setOpen(!open)}
         />
       ) : (
