@@ -25,6 +25,18 @@ export const Feed: React.FC<FeedProps> = () => {
           />
         </div>
       </div>
+
+      {/** Recent */}
+      <div className="mt-6">
+        <p className="text-base text-gray-800">Recent activity</p>
+        {/** Repos */}
+        <div className="border-gray-100 border-[0.1em] bg-[#FFFFFF] shadow-sm rounded-sm mt-1 px-2">
+          <p className="mt-4 text-xs text-gray-500">
+            When you take actions across GitHub, we&apos;ll provide links to
+            that activity here.
+          </p>
+        </div>
+      </div>
     </div>
   )
 }
