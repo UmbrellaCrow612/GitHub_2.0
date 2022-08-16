@@ -1,9 +1,5 @@
-
-
-interface RepositoriesProps {
-
-}
+interface RepositoriesProps {}
 
 export const Repositories: React.FC<RepositoriesProps> = () => {
-        return <>Repositories</>
+  return <div className="hidden">Repositories</div>
 }

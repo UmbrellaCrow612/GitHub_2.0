@@ -1,9 +1,5 @@
-
-
-interface ChangesProps {
-
-}
+interface ChangesProps {}
 
 export const Changes: React.FC<ChangesProps> = () => {
-        return (<section>Changes</section>);
+  return <div className="hidden">Changes</div>
 }
